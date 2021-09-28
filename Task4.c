@@ -110,8 +110,8 @@ for (Account_Number_Check = 0 ; Account_Number_Check < 5 ; Account_Number_Check+
 
 	if((User.cardExpirationDate[3] < Terminal.transactionDate[6])) Transaction_Is =  DECLINED;
 	else if ((User.cardExpirationDate[3] == Terminal.transactionDate[6]) && (User.cardExpirationDate[4] < Terminal.transactionDate[7])) Transaction_Is =  DECLINED;
-	else if ((User.cardExpirationDate[3] == Terminal.transactionDate[6]) && (User.cardExpirationDate[4] == Terminal.transactionDate[7]) && (User.cardExpirationDate[0] < Terminal.transactionDate[4])) Transaction_Is =  DECLINED;
-	else if ((User.cardExpirationDate[3] == Terminal.transactionDate[6]) && (User.cardExpirationDate[4] == Terminal.transactionDate[7]) && (User.cardExpirationDate[0] == Terminal.transactionDate[4]) &&(User.cardExpirationDate[1] < Terminal.transactionDate[5])) Transaction_Is =  DECLINED;
+	else if ((User.cardExpirationDate[3] == Terminal.transactionDate[6]) && (User.cardExpirationDate[4] == Terminal.transactionDate[7]) && (User.cardExpirationDate[0] < Terminal.transactionDate[3])) Transaction_Is =  DECLINED;
+	else if ((User.cardExpirationDate[3] == Terminal.transactionDate[6]) && (User.cardExpirationDate[4] == Terminal.transactionDate[7]) && (User.cardExpirationDate[0] == Terminal.transactionDate[4]) &&(User.cardExpirationDate[1] < Terminal.transactionDate[4])) Transaction_Is =  DECLINED;
 	else 
 	{
 		
